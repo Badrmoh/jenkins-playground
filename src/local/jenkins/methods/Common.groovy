@@ -12,6 +12,7 @@ def checkout() {
       		returnStdout: true
 			).trim()
 		}
+	}
 	else if (params.COMMIT == "latest") {
 		echo "======> Testing latest commit"
 		script {
@@ -20,7 +21,6 @@ def checkout() {
       			returnStdout: true
       		).trim()
 		}
-	}
 	}
 }
 
