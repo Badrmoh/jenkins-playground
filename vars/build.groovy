@@ -1,9 +1,9 @@
 import local.jenkins.methods.Common
-import local.jenkins.constants.Constants
+import local.jenkins.constants.Variables
 
 def call() {
   def common = new Common()
-	def consts = Constants.instance
+	def consts = Variables.instance
 	pipeline {
 			agent {
 				node {
