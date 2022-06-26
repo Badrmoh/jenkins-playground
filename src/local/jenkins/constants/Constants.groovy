@@ -1,4 +1,4 @@
-package local.jenkins.contants.Constants
+package local.jenkins.contants
 
 @Singleton
 class Constants{

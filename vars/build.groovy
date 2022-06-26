@@ -16,6 +16,7 @@ def call() {
 			}
 	    stages {
 				stage('Checkout') {steps{script{common.checkout()}}}
+				stage('Check variables') {steps{script{echo "${TEST_VAR1}\n${TEST_VAR2}"}}}
 				stage('Build') {steps{script{common.buildImage()}}}
 				stage('Push') {steps{script{common.pushImage()}}}
 	    }
