@@ -7,7 +7,7 @@ def call() {
 	pipeline {
 			agent {
 				node {
-					//label 'revenga'
+					label 'docker'
 				}
 			}
 			options {
