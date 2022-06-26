@@ -3,7 +3,7 @@ import local.jenkins.constants.Constants
 
 def call() {
   def common = new Common()
-	def constants = new Constants()
+	def constants = Constants.instance
 	pipeline {
 			agent {
 				node {
