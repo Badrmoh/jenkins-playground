@@ -15,9 +15,9 @@ def call() {
 				disableConcurrentBuilds()
 			}
 	    stages {
-				stage('Checkout') {script{common.checkout()}}
-				stage('Build') {script{common.buildImage()}}
-				stage('Push') {script{common.pushImage()}}
+				stage('Checkout') {steps{script{common.checkout()}}}
+				stage('Build') {steps{script{common.buildImage()}}}
+				stage('Push') {steps{script{common.pushImage()}}}
 	    }
 
 	}
