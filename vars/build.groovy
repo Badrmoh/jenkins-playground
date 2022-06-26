@@ -4,7 +4,7 @@ import local.jenkins.constants.Variables
 def call() {
   def common = new Common()
 	//def consts = Variables.instance()
-	println Variables.instance.TEST_VAR1
+	//println Variables.instance.TEST_VAR1
 	pipeline {
 			agent {
 				node {
