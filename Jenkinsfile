@@ -1,5 +1,5 @@
 // Jenkinsfile
-@Library('jenkins-playground')_ //@jenkins-shared-library')_
+@Library('jenkins-shared-library')_
 
 properties([
   parameters([
