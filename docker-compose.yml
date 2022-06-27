@@ -19,7 +19,10 @@ services:
     privileged: true
     user: root
     container_name: agent
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  
 
 volumes:
   jenkins-data:
-    name: "jenkins-instance_jenkins-data"
+    name: "jenkins-data"
